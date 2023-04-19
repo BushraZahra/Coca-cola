@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoCa_Cola</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  </head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.jpeg" alt="logo"  class="logo"></a>
+            <ul class="navigation">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Menu</a></li>
+             <li><a href="#">What's New</a></li>
+             <li><a href="#">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Taste the Feeling</h2>
+                <p>
+                    The Coca-Cola Company is a total beverage company with products sold in more than 200 countries and territories. Our company's purpose is to refresh the world and make a difference. Our portfolio of brands includes Coca-Cola, Sprite, Fanta and other sparkling soft drinks.
+                </p>
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="imgBox">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="cocacola1.jpeg" alt="coke1" class="coke"></div>
+                      <div class="swiper-slide"><img src="cocacola2.jpeg" alt="coke2" class="coke"></div>
+                      <div class="swiper-slide"><img src="cocacola3.jpeg" alt="coke3" class="coke"></div>
+                      <div class="swiper-slide"><img src="cocacola4.jpeg" alt="coke4" class="coke"></div>
+                      <div class="swiper-slide"><img src="cocacola5.jpeg" alt="coke5" class="coke"></div>
+                      <div class="swiper-slide"><img src="cocacola6.jpeg" alt="coke6" class="coke"></div>
+                      <div class="swiper-slide"><img src="cocacola7.jpeg" alt="coke7" class="coke"></div>
+
+                    
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+</svg></li>
+
+            <li></li>
+            <li></li>
+
+        </ul>
+    </section>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            loop: true,
+        });
+    </script>
+
+</body>
+</html>
